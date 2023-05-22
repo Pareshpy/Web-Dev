@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <h2>Basic Entry form</h2>
+    <form action="backend.php">
+        <label for="name">Name</label>
+        <div>
+            <input type="text" name="c.name" id="name">
+        </div>
+        <label for="phone">Phone</label>
+        <div>
+            <input type="number" name="c.phone" id="phone">
+        </div>
+        <label for="email">Email</label>
+        <div>
+            <input type="email" name="c.email" id="email">
+        </div>
+        <label for="add">Address </label>
+        <div>
+            <input type="text" name="c.address" id="add">
+        </div>
+        <label for="date">DOB</label>
+        <div>
+            <input type="date" name="c.date_time" id="date">
+        </div>
+        <div>
+            <label for="sex">Are you 18+ above</label>
+            <input type="checkbox" name="c.Eligibility"checked id="sex">
+        </div>
+        <label for="gen">Gender</label>
+        <div>
+            Male <input type="radio" name="c.gender" id="gen"> female <input type="radio" name="c.gender"> other <input
+                type="radio" name="c.gender">
+        </div>
+        <label for="dis">Discribe Yourself :</label>
+        <div>
+            <textarea name="c.Discribe" id="" cols="30" rows="10" id="dis"></textarea>
+        </div>
+        <label for="lang">language</label>
+        <select name="select" id="lang">
+            <option value="eng" selected>English</option>
+            <option value="hin">Hindi</option>
+            <option value="bang">Bangali</option>
+        </select>
+        <div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</body>
+
+</html>

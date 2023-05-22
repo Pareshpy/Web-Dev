@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pos abs, Relative, Fixed, Sticky</title>
+    <style>
+        .container {
+            border: 1px solid black;
+            background-color: rgb(137 56 188 / 54%);
+            height: 3000px;
+        }
+
+        /* position : Static(Default), absolute, relative, fixed, sticky; */
+        .box {
+            display: inline-block;
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+        }
+
+        #box3 {
+            /* pos relative to its normal position */
+            position: relative;
+            top: 34px;
+            left: 34px;
+        }
+
+        #box2 {
+            /* absolute : relative to the position of its first parent */
+            position: absolute;
+            top: 34px;
+            right: 45px;
+        }
+
+        #box4 {
+            display: inline-block;
+            border: 2px solid rgb(0, 0, 0);
+            width: 71px;
+            height: 30px;
+            margin: 10px;
+            border-radius: 20px;
+            
+
+            /* fixed: pos related with the browser window */
+            position: fixed;
+            bottom: 2px;
+            right: 4px;
+        }
+        #box1{
+            position: sticky;
+            top: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">Sticky</div>
+        <div class="box" id="box2">absolute</div>
+        <div class="box" id="box3">Relative</div>
+        <div class="box" id="box4">Fixed</div>
+    </div>
+</body>
+
+</html>
